@@ -2,7 +2,7 @@
   "name": "@preignition/vite-lit-starter",
   "description": "starter kit for lit-element and vite",
   "repository": "https://github.com/preignition/vite-lit-starter",
-  "homepage": "https://vite-lit-started.netlify.com",
+  "homepage": "https://vite-lit-starter.netlify.app/",
   "version": "0.0.0",
   "type": "module",
   "files": [
@@ -17,8 +17,8 @@
   "scripts": {
     "start": "vite",
     "dev": "vite",
-    "copy-to-public" : "cp -f package.json public/package.json && cp -f README.md public/README && mkdir -p public/docs && cp -rf docs/* public/docs " , 
-    "build": "npm run copy-to-public &&   vite build",
+    "copy-to-public" : "cp -f package.json public/package.json && cp -f README.md public/README.md && mkdir -p public/docs && cp -rf docs/* public/docs " , 
+    "build": "npm run analyze && npm run copy-to-public && vite build",
     "preview": "vite preview",
     "test": "wtr",
     "analyze-json": "cem analyze",
