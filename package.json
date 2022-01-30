@@ -17,7 +17,8 @@
   "scripts": {
     "start": "vite",
     "dev": "vite",
-    "build": "vite build",
+    "copy-to-public" : "cp -f package.json public/package.json && cp -f README.md public/README && mkdir -p public/docs && cp -rf docs/* public/docs " , 
+    "build": "npm run copy-to-public && vite build",
     "preview": "vite preview",
     "test": "wtr",
     "analyze-json": "cem analyze",
