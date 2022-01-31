@@ -16,6 +16,13 @@
     />
     <link rel="stylesheet" type="text/css" href="/index.css" />
     <link rel="stylesheet" type="text/css" href="/variables.css" />
+    <style id="appendStyle">
+      /* 
+        Style to be appended to demo-root shadorRoot 
+        see https://api-viewer.open-wc.org/docs/api/styling/ for styling
+       */
+      api-viewer::part(demo-output) {}
+    </style>
     <script type="module" src="/src/my-element.js"></script>
     <script type="module">
       import "api-viewer-element";
@@ -54,7 +61,10 @@
       ];
 
       window.addEventListener("DOMContentLoaded", (event) => {
-        document.querySelector("#demo").routes = ROUTES;
+        const demo = document.querySelector("#demo")
+        demo.routes = ROUTES;
+        demo.shadowRoot.appendChild(document.querySelector("#appendStyle"))
+        
       });
     </script>
   </head>
