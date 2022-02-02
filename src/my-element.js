@@ -19,13 +19,13 @@ export class MyElement extends LitElement {
 
   static get properties() {
     return {
-      /**
-       * The name to say "Hello" to.
+      /** 
+       * @type {string} the name to say hello to
        */
       name: { type: String },
 
       /**
-       * The number of times the button has been clicked.
+       * @type {number} The number of times the button has been clicked.
        */
       count: { type: Number },
     };
