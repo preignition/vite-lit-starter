@@ -11,6 +11,12 @@
   "authors": [
     "christophe.geiser <christophe@preignition.org>"
   ],
+  "keywords": [
+    "lit",
+    "vitejs",
+    "web-components"
+  ],
+  "license": "MIT",
   "main": "index.js",
   "module": "index.js",
   "scripts": {
